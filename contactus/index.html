@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav-content">
+            <div class="logo-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" style="width: 100%; height: 100%;" class="site-logo">
+            </div>
+            <div class="goto-content">
+                <a class="home-goto nav-button" href="../index.html">Início</a>
+                <a class="aboutus-goto nav-button" href="../aboutus/index.html">Sobre nós</a>
+                <a class="contactus-goto nav-button" href="../contactus/index.html">Contatos</a>
+            </div>
+        </div>
+        <hr style='color:#313131;'>
+    </header>
+    <main>
+        <div class="page-content">
+            <div class="form-content">
+                <form>
+                    <div class="inputs">
+                        <label class="input-content">
+                            <p class="input-text" style="margin-top: 2em;">Insira o seu e-mail:</p>
+                            <p class="input-pin">@</p>
+                            <input type="text" class="email-input to-read" maxlength="45" style="width: 100%;">
+                            <section class="input-alert"></section>
+                            <span id="measure"></span>
+                        </label>
+                        <label class="input-content">
+                            <p class="input-text" style="margin-top: 2em;">Insira o seu usuário:</p>
+                            <div class="input-area">
+                                <p class="input-pin">#</p>
+                                <input type="text" class="user-input to-read">
+                                <span class="fall-word-area"></span>
+                                <section class="input-alert"></section>
+                            </div>
+                        </label>
+                        <div class="input-trash">
+
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text-area-text">Insira o seu comentário:</p>
+                        <textarea class="comment-area to-read" maxlength="512"></textarea>
+                        <section class="input-alert" style="margin: -.3em 0 1em 0; font-size: 20px"></section>
+                    </div>
+                    <button class="send-button" type="button">Enviar</button>
+                </form>
+            </div>
+            <div class="popup-content">
+                <div class="popup-background"></div>
+                <div class="popup-page">
+                    <div class="popup-message">
+                        <div class="popup-icon"></div>
+                        <div class="popup-text">Mensagem enviada com sucesso!</div>
+                    </div>
+                    <div class="popup-close">❌</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

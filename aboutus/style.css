@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #131313;
+}
+
+footer {
+    background-color: #131313;
+    width: 100%;
+}
+
+header {
+    z-index: 100;
+    background-color: #131313;
+    width: 100%;
+}
+
+input[type='range']{
+    cursor: pointer;
+    width: 15em;
+    accent-color: #40d148;
+
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+}
+
+.logo-content {
+    width: 3em;
+    margin: 1.5em;
+}
+
+.goto-content {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 13em;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.page-content {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1em;
+}
+
+.cards-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-size: cover;
+    padding: 1em;
+    height: 30em;
+
+    transition: 1s;
+    border: solid 2px white;
+    border-radius: 12px;
+    box-shadow: black 3px 3px 15px;
+    user-select: none;
+
+}
+
+.card-img-content {
+    background-color: yellow;
+    width: 15em;
+    height: 15em;
+
+    border-radius: 5px;
+    
+    overflow: hidden;
+
+}
+
+.card-text-content {
+    position: relative;
+    margin-top: 1em;
+    width: 15em;
+
+}
+
+.card-subtitle {
+    font-size: 15px;
+    
+}
+
+.card-class {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    top: 2em;
+    right: .1em;
+    padding: .2em;
+
+    border-radius: 2px;
+    font-size: 15px;
+    color: black;
+
+}
+
+.card-description {
+    position: relative;
+    font-size: 17px;
+
+}
+
+.description-skill {
+    display: inline-flex;
+    color: black;
+    padding: .2em;
+    margin-top: .3em;
+    border-radius: 3px;
+    background-color: white;
+    width: fit-content;
+
+}
+
+
+.main {
+    z-index: 99;
+
+}
+
+.right {
+    position: absolute;
+    right: 7em;
+    transform: scale(0.8);
+    filter: blur(2px);
+    opacity: 60%;
+    transition: .3s;
+
+}
+
+.left {
+    position: absolute;
+    left: 7em;
+    
+    transform: scale(0.8);
+    filter: blur(2px);
+    opacity: 60%;
+    transition: .3s;
+
+}
+
+.none {
+    display: none;
+
+}
+
+.toggle-card{
+    z-index: 101;
+    position: absolute;
+    user-select: none;
+    
+}
+
+.toggle-button{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    padding: .2em;
+
+    opacity: 90%;
+    border: none;
+    border-radius: 3px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.previous-card {
+    left: 7em;
+
+}
+
+.next-card {
+    right: 7em;
+
+}
+
+.presentation-content{
+    position: relative;
+    transition: 1s all;
+
+    margin: 1em 0 3em 0;
+
+}
+
+.presentation-current-card{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.presentation-image {
+    padding: 1em;
+    width: 20em;
+    height: 20em;
+
+}
+
+.presentation-text{
+    margin: 0 1em 1em 5em;
+    width: 45em;
+    text-align:justify;
+
+}
+
+.presentation-song{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: .8em;
+    background-color: #313131;
+    width: fit-content;
+    height: 50px;
+
+    bottom: 0;
+    left: 25em;
+    border-radius: 5em;
+    
+}
+
+.song-card{
+    display: inline-flex;
+
+}
+
+.spotify-logo{
+    height: 1.5em;
+    width: 1.5em;
+
+    pointer-events: none;
+    user-select: none;
+
+}
+
+.start-song{
+    width: 1.5em;
+    background: none;
+    border: none;
+    margin:-3px 0 0 3px;
+
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.footer-text-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-text {
+    margin: 1em;
+    width: 20em;
+
+}
+
+.hidden{
+    display: none;
+
+}
+

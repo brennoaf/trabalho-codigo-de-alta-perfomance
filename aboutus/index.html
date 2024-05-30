@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-content">
+                <div class="logo-content">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" style="width: 100%; height: 100%;" class="site-logo">
+                </div>
+                <div class="goto-content">
+                    <a class="home-goto nav-button" href="../index.html">Início</a>
+                    <a class="aboutus-goto nav-button" href="../aboutus/index.html">Sobre nós</a>
+                    <a class="contactus-goto nav-button" href="../contactus/index.html">Contatos</a>
+                </div>
+            </div>
+            <hr style='color:#313131;'>
+        </header>
+        <main>
+            <div class="page-content">
+                <div class="cards-content">
+                    <div class="previous-card toggle-card" id="previous-button">
+                        <button class="toggle-button">⮜</button>
+                    </div>
+                    <div class="card left" id="cards" style="background-image: url('../assets/cards/wallpapers/calado.jfif');">
+                        <div class="card-img-content">
+                            <img src="../assets/cards/calado1.jpg" alt="" class="card-img" style="width: 100%; height: 150%; margin-top: -5em;">
+                        </div>
+                        <div class="card-text-content">
+                            <h2 class="card-title">Gabriel Calado</h2>
+                            <p>Sistemas de Informação</p>
+                            <div class="card-class">3MC</div>
+                            <br>
+                            <div class="card-description"><strong>Especialidades</strong>:<br>
+                                <div class="description-skill">Lógica da programação</div>
+                                <div class="description-skill">Java</div>
+                                <div class="description-skill">Springboot</div>
+                                <div class="description-skill">Python</div>
+                            </div>
+                            <div class="card-presentation hidden">
+                                Ele é o tipo de pessoa que não tem medo de questionar o status quo, 
+                                sempre pronto para desafiar normas e preconceitos com uma visão única e original. 
+                                Seu espírito rebelde é temperado por uma empatia sincera, fazendo dele um amigo leal e 
+                                compreensivo, alguém que está sempre disposto a ouvir e oferecer apoio.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card main" id="cards" style="background-image: url('../assets/cards/wallpapers/brenno.webp');">
+                        <div class="card-img-content">
+                            <img src="../assets/cards/brenno1.jpg" alt="" class="card-img" style="width: 100%; height: 100%;">
+                        </div>
+                        <div class="card-text-content">
+                            <h2 class="card-title">Brenno França</h2>
+                            <p class='card-subtitle'>Engenharia da Computação</p>
+                            <div class="card-class">3MC</div>
+                            <br>
+                            <div class="card-description"><strong>Especialidades</strong>:<br>
+                                <div class="description-skill">Lógica da programação</div>
+                                <div class="description-skill">HTML</div>
+                                <div class="description-skill">CSS</div>
+                                <div class="description-skill">JavaScript</div>
+                                <div class="description-skill">Python</div>
+                                <div class="description-skill">NodeJS</div>
+                                <div class="description-skill">TypeScript</div>
+                                <div class="description-skill">Angular</div>
+                            </div>
+                            <div class="card-presentation hidden">
+                                Conhecido por sua calma inabalável, ele nunca se deixa abalar por pequenas coisas. 
+                                Está sempre no controle, analisando as situações com uma serenidade quase zen. 
+                                Mas não se engane pela aparência serena: por trás desse semblante tranquilo, 
+                                há uma mente afiada, sempre pronta para lançar uma observação sarcástica ou uma resposta 
+                                inteligente que deixa todos ao redor pensando "por que eu não pensei nisso antes?"
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card right" id="cards" style="background-image: url('../assets/cards/wallpapers/rodrigo.jpg');">
+                        <div class="card-img-content">
+                            <img src="../assets/cards/rodrigo1.jpg" class="card-img" style="width: 100%; height: 150%; margin-top: -3em;">
+                        </div>
+                        <div class="card-text-content">
+                            <h2 class="card-title">Rodrigo Andrade</h2>
+                            <p class='card-subtitle'>Ciência da Computação</p>
+                            <div class="card-class">3MC</div>
+                            <br>
+                            <div class="card-description"><strong>Especialidades</strong>:<br>
+                                <div class="description-skill">HTML</div>
+                                <div class="description-skill">CSS</div>
+                                <div class="description-skill">JavaScript</div>
+                                <div class="description-skill">NodeJS</div>
+                                <div class="description-skill">React</div>
+                                <div class="description-skill">React Native</div>
+                                <div class="description-skill">TypeScript</div>
+                                <div class="description-skill">Tailwind</div>
+                                <div class="description-skill">Python</div>
+                            </div>
+                            <div class="card-presentation hidden">
+                                Ele é um jovem de personalidade introspectiva e profundamente contemplativa. 
+                                Sempre em busca de respostas, ele tem uma mente analítica que não se contenta com superficialidades. 
+                                Sua determinação é evidente em tudo o que faz, seja nos estudos, no trabalho ou em seus hobbies pessoais. 
+                                Embora possa parecer reservado à primeira vista, aqueles que o conhecem bem sabem que ele possui uma grande paixão por compreender o mundo ao seu redor.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card none" id="cards" style="background-image: url(../assets/cards/wallpapers/eliel.jfif);">
+                        <div class="card-img-content">
+                            <img src="../assets/cards/eliel1.jpg" class="card-img" style="width: 100%; height: 150%; margin-top: -2em; scale: 1.5;">
+                        </div>
+                        <div class="card-text-content">
+                            <h2 class="card-title">Eliel Trajano</h2>
+                            <p class='card-subtitle'>Engenharia da Computação</p>
+                            <div class="card-class">3MC</div>
+                            <br>
+                            <div class="card-description"><strong>Especialidades</strong>:<br>
+                                <div class="description-skill">Lógica da programação</div>
+                                <div class="description-skill">HTML</div>
+                                <div class="description-skill">CSS</div>
+                                <div class="description-skill">JavaScript</div>
+                                <div class="description-skill">Python</div>
+                            </div>
+                            <div class="card-presentation hidden">
+                                Com um estilo casual e moderno, é uma pessoa prática, que gosta de resolver problemas rapidamente. 
+                                É alguém que valoriza a comunicação e a eficiência, seja no trabalho ou na vida pessoal. 
+                                Com um toque de humor, é uma pessoa que sempre tem uma piada pronta ou uma história interessante para contar.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card none" id="cards" style="background-image: url('../assets/cards/wallpapers/marcus.jpg');">
+                        <div class="card-img-content">
+                            <img src="../assets/cards/marcus1.jpg" class="card-img" style="width: 100%; height: 150%; margin-top: -5em">
+                        </div>
+                        <div class="card-text-content">
+                            <h2 class="card-title">Marcus Vinicius</h2>
+                            <p class='card-subtitle'>Sistemas de Informação</p>
+                            <div class="card-class">3MC</div>
+                            <br>
+                            <div class="card-description"><strong>Especialidades</strong>:<br>
+                                <div class="description-skill">Java</div>
+                                <div class="description-skill">Python</div>
+                                <div class="description-skill">Unity 4/5</div>
+                                <div class="description-skill">Design UI/UX</div>
+                            </div>
+                            <div class="card-presentation hidden">
+                                Com um senso de humor peculiar e uma perspectiva única sobre a vida, 
+                                ele é uma combinação irresistível de sabedoria e diversão. 
+                                Ele não se leva muito a sério, e é exatamente isso que o torna tão cativante. 
+                                É o tipo de pessoa que pode transformar uma conversa casual em uma memória inesquecível 
+                                com apenas uma observação ou uma piada bem colocada.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-card toggle-card" id="next-button">
+                        <button class="toggle-button">⮞</button>
+                    </div>
+                </div>
+                <hr style="color: #313131; margin: 1em 0 1em 0;">
+                <div class="presentation-content">
+                    <div class="presentation-current-card">
+                        <div class="presentation-image">
+                            <img src="../assets/logos/css.png" alt="" id="presentation-img" style="width: 100%; height: 150%;">
+                        </div>
+                        <div class="presentation-text" id="presentation-txt">
+                            <div class="presentation-title" style="font-size: 60px; font-weight: 600;">
+                                <h1></h1>
+                            </div>
+                            <div class="presentation-description" style="margin-top: 1em; font-size: 20px;">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="presentation-song">
+                            <div class="song-card">
+                                <audio src="../assets/audios/presentation/brenno.mp3" id="audio"></audio>
+                                <div class="spotify-logo">
+                                    <img src="../assets/logos/spotify.png" style="width: 100%; height: 100%;">
+                                </div>
+                                <button class="start-song" id="playpause-btn">▶</button>
+                                <input type="range" id="seek-bar" value="0" max="100">
+                                <span style="margin-left: 3px;" id="current-time">00:00</span> / <span id="duration">00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <hr style='color:#313131;'>
+            <div class="footer-content">
+                <div class="footer-text-content">
+                    <div class="left-text footer-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione repudiandae architecto a, esse laborum delectus? Sit nobis similique labore asperiores veritatis obcaecati eaque cumque tenetur adipisci, expedita magnam doloribus!</p>
+                    </div>
+                    <div class="mid-text footer-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tempora? Veniam corporis vel, ab porro a temporibus eos consequatur ut in, sapiente ex reprehenderit voluptatibus repellendus, fugiat numquam voluptatum libero?</p>
+                    </div>
+                    <div class="right-text footer-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti tempore eligendi laborum sequi, adipisci ipsam necessitatibus natus provident dolorem libero cumque recusandae aspernatur quidem aliquam qui! Minus facilis ab vitae.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

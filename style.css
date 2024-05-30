@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    background-color: #131313;
+    
+    cursor: url('./assets/lanterna_recarregavel_mini_1_led_litio_vonder_1.png'), auto;
+    overflow: hidden;
+}
+
+.preto{
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+
+    transition: 0.5s;
+    background-color: black;
+    user-select: none;
+}
+
+
+
+#move{
+    z-index: 101;
+    height: 100px;
+    width: 10px;
+    left: 50%;
+    top: -10em;
+
+    transform: 
+        translate(-30%, -80%) rotate(165deg);
+    position: fixed;
+    opacity: 0.3;
+    filter: blur(2px);
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.nav-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+
+    cursor: initial;
+}
+
+.logo-content{
+    width: 3em;
+    margin: 1.5em;
+}
+
+.goto-content {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 13em;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-button{
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.page-content{
+    display: none;
+}
+
+.knowledge-content{
+    display:inline-flex;
+    margin: 5em 0 0 5em;
+
+}
+
+.knowledge-text-content{
+    width: 30em;
+
+    margin: -3em 0 0 12em;
+}
+
+.followup-img{
+    margin: -1em;
+    position: absolute;
+    z-index: -1;
+
+    width: 15em;
+    filter: blur(2px) opacity(30%);
+    transition: 1s;
+}
+
+.circle{
+    display: flex;
+    width:25em;
+    height: 25em;
+
+    
+}
+
+.circle-item{
+    position: absolute;
+    width: 6em;
+    height: 6em;
+
+    transition: 2s ease-out;
+    user-select: none;
+    cursor: pointer;
+}
+
+#circle-item1{
+    translate: 120% -50%;
+}
+#circle-item2{
+    translate: 270% 270%;
+}
+
+#circle-item3{
+    translate: -50% 270%;
+}
+
+
+.switch-content{
+    display: initial;
+    width: 100%;
+    height: 100%;
+}
+
+.find-switch{
+    position: absolute;
+    width: 60px;
+    aspect-ratio: 1;
+    right: 10em;
+    bottom: 7em;
+
+}
+
+.switch-hitbox{
+    position: absolute;
+    z-index: 104;
+    width: 60px;
+    aspect-ratio: 1;
+    right: 10em;
+    bottom: 7em;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.miner-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    margin: 4em 0 4em 0;
+}
+
+.miner-page{
+    width: 20em;
+    height: 25em;
+
+    background-color: lightgray;
+    border: outset rgb(184, 184, 184) 5px;
+}
+
+.miner-header{
+    display: flex;
+    justify-content: center;
+
+
+    border-bottom: inset rgb(167, 167, 167) 5px;
+}
+
+.reset-game{
+    margin: .5em 0 .5em 0;
+
+    font-size: 20px;
+    border: outset rgb(184, 184, 184);
+    cursor: pointer;
+}
+
+.miner-game{
+    display: grid;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-choice{
+    width: 2em;
+    aspect-ratio: 1;
+
+    border: outset rgb(184, 184, 184);
+    cursor: pointer;
+}
