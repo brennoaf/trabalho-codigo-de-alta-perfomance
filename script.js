@@ -28,7 +28,7 @@ page = {
 
 knowledge = {
     html: {
-        logo: '../assets/logos/html f.png',
+        logo: 'assets/logos/html f.png',
         title: 'HTML',
         text: `HTML, ou Linguagem de Marcação de Hipertexto, é a espinha dorsal de qualquer página da web. 
         Ele fornece a estrutura básica do conteúdo, permitindo que os desenvolvedores definam elementos como 
@@ -37,7 +37,7 @@ knowledge = {
     },
 
     css: {
-        logo: '../assets/logos/css f.png',
+        logo: 'assets/logos/css f.png',
         title: 'CSS',
         text: `CSS, ou Folhas de Estilo em Cascata, é a linguagem usada para descrever a apresentação de um documento 
         escrito em HTML ou XML. Enquanto o HTML fornece a estrutura da página, o CSS é responsável por como essa 
@@ -47,7 +47,7 @@ knowledge = {
     },
 
     js: {
-        logo: '../assets/logos/js.png',
+        logo: 'assets/logos/js.png',
         title: 'JavaScript',
         text: `JavaScript é uma linguagem de programação que permite a criação de conteúdo dinâmico e interativo em 
         páginas da web. Diferente do HTML e do CSS, que são usados para estrutura e estilo, respectivamente, 
