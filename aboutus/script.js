@@ -10,6 +10,9 @@ page = {
         presentationGithub: document.querySelector('.presentation-github'),
         presentationLinkedin: document.querySelector('.presentation-linkedin'),
 
+        leftCard: document.querySelector('.left'),
+        rightCard: document.querySelector('.right'),
+
         song: {
             audio: document.getElementById("audio"),
             playPauseBtn: document.getElementById("playpause-btn"),
@@ -70,15 +73,6 @@ page.elements.nextCard.addEventListener('click', () =>{
         page.elements.presentationLinkedin
     )
 
-})
-
-toggleCards[0].addEventListener('click', () =>{
-    toPreviousCard(toggleCards, positions);
-})
-
-
-toggleCards[2].addEventListener('click', () =>{
-    toNextCard(toggleCards, positions);
 })
 
 
@@ -143,7 +137,7 @@ function toNextCard(cardsArray, cardsPosition){
         }
     
     }
-    remover = cardsArray.shift()
+    let remover = cardsArray.shift()
     cardsArray.push(remover)
 }
 
@@ -151,14 +145,15 @@ function toNextCard(cardsArray, cardsPosition){
 
 
 function changePresentation(img, title, description, audio, github, linkedin){
-    img.src = document.querySelectorAll('.main')[0].childNodes[1].childNodes[1].src
+    mainCard = document.querySelectorAll('.main')[0]
+    img.src = mainCard.childNodes[1].childNodes[1].src
 
-    title.innerHTML = document.querySelectorAll('.main')[0].childNodes[3].childNodes[1].textContent
-    description.innerHTML = document.querySelectorAll('.main')[0].childNodes[3].childNodes[11].textContent
+    title.innerHTML = mainCard.childNodes[3].childNodes[1].textContent
+    description.innerHTML = mainCard.childNodes[3].childNodes[11].textContent
 
-    audio.src = document.querySelectorAll('.main')[0].childNodes[3].childNodes[13].textContent
-    github.href = document.querySelectorAll('.main')[0].childNodes[3].childNodes[15].textContent
-    linkedin.href = document.querySelectorAll('.main')[0].childNodes[3].childNodes[17].textContent
+    audio.src = mainCard.childNodes[3].childNodes[13].textContent
+    github.href = mainCard.childNodes[3].childNodes[15].textContent
+    linkedin.href = mainCard.childNodes[3].childNodes[17].textContent
 
 }
 

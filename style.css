@@ -15,12 +15,18 @@ body{
     overflow: hidden;
 }
 
+footer {
+    display: none;
+    background-color: #131313;
+    width: 100%;
+}
+
 .preto{
     position: absolute;
     display: flex;
     z-index: 100;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
 
     transition: 0.5s;
@@ -206,4 +212,16 @@ body{
 
     border: outset rgb(184, 184, 184);
     cursor: pointer;
+}
+
+.footer-text-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-text {
+    margin: 1em;
+    width: 20em;
+
 }

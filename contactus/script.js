@@ -38,8 +38,8 @@ page.elements.userInput.addEventListener('input', () =>{
         page.elements.fallArea.appendChild(wordSpan)
 
         wordSpan.animate([
-            {bottom: '2.5em'},
-            {bottom: '-1.5em'}
+            {bottom: '2.5em', display: 'initial'},
+            {bottom: '-1.5em', display: 'none'}
 
         ], {duration: 250, fill: 'forwards'})
 

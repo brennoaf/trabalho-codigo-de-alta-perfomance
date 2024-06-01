@@ -22,6 +22,8 @@ page = {
         switchHitbox: document.querySelector('.switch-hitbox'),
         switchContent: document.querySelector('.switch-content'),
 
+        footer: document.querySelector('footer'),
+
     }
 
 }
@@ -173,6 +175,7 @@ page.elements.switchHitbox.addEventListener('click', () =>{
     page.elements.switchContent.style.display = 'none'
     page.elements.light.style.display = 'none'
     document.body.style.cursor = 'initial'
+    page.elements.footer.style.display = 'initial'
 
 })
 
