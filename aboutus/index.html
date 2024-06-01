@@ -29,7 +29,7 @@
                     </div>
                     <div class="card left" id="cards" style="background-image: url('../assets/cards/wallpapers/calado.jfif');">
                         <div class="card-img-content">
-                            <img src="../assets/cards/calado1.jpg" alt="" class="card-img" style="width: 100%; height: 150%; margin-top: -5em;">
+                            <img src="../assets/cards/calado1.jpg" class="card-img" style="width: 100%; height: 150%; margin-top: -5em;">
                         </div>
                         <div class="card-text-content">
                             <h2 class="card-title">Gabriel Calado</h2>
@@ -48,11 +48,14 @@
                                 Seu espírito rebelde é temperado por uma empatia sincera, fazendo dele um amigo leal e 
                                 compreensivo, alguém que está sempre disposto a ouvir e oferecer apoio.
                             </div>
+                            <div class="card-song hidden">../assets/audios/presentation/brenno.mp3</div>
+                            <div class="card-github hidden">https://google.com</div>
+                            <div class="card-linkedin hidden">https://google.com</div>
                         </div>
                     </div>
                     <div class="card main" id="cards" style="background-image: url('../assets/cards/wallpapers/brenno.webp');">
                         <div class="card-img-content">
-                            <img src="../assets/cards/brenno1.jpg" alt="" class="card-img" style="width: 100%; height: 100%;">
+                            <img src="../assets/cards/brenno1.jpg" class="card-img" style="width: 100%; height: 100%;">
                         </div>
                         <div class="card-text-content">
                             <h2 class="card-title">Brenno França</h2>
@@ -75,8 +78,10 @@
                                 Mas não se engane pela aparência serena: por trás desse semblante tranquilo, 
                                 há uma mente afiada, sempre pronta para lançar uma observação sarcástica ou uma resposta 
                                 inteligente que deixa todos ao redor pensando "por que eu não pensei nisso antes?"
-                                
                             </div>
+                            <div class="card-song hidden">../assets/audios/presentation/brenno.mp3</div>
+                            <div class="card-github hidden">https://github.com/brennoaf</div>
+                            <div class="card-linkedin hidden">https://linkedin.com/in/brenno-françaa</div>
                         </div>
                     </div>
                     <div class="card right" id="cards" style="background-image: url('../assets/cards/wallpapers/rodrigo.jpg');">
@@ -99,12 +104,15 @@
                                 <div class="description-skill">Tailwind</div>
                                 <div class="description-skill">Python</div>
                             </div>
-                            <div class="card-presentation hidden">
+                            <span class="card-presentation hidden">
                                 Ele é um jovem de personalidade introspectiva e profundamente contemplativa. 
                                 Sempre em busca de respostas, ele tem uma mente analítica que não se contenta com superficialidades. 
                                 Sua determinação é evidente em tudo o que faz, seja nos estudos, no trabalho ou em seus hobbies pessoais. 
                                 Embora possa parecer reservado à primeira vista, aqueles que o conhecem bem sabem que ele possui uma grande paixão por compreender o mundo ao seu redor.
-                            </div>
+                            </span>
+                            <span class="card-song hidden">../assets/audios/presentation/rodrigo.mp3</span>
+                            <span class="card-github hidden">https://github.com/rodrigoacm10</span>
+                            <span class="card-linkedin hidden">https://www.linkedin.com/in/rodrigo-andrade-5420b2277/</span>
                         </div>
                     </div>
                     <div class="card none" id="cards" style="background-image: url(../assets/cards/wallpapers/eliel.jfif);">
@@ -128,6 +136,9 @@
                                 É alguém que valoriza a comunicação e a eficiência, seja no trabalho ou na vida pessoal. 
                                 Com um toque de humor, é uma pessoa que sempre tem uma piada pronta ou uma história interessante para contar.
                             </div>
+                            <div class="card-song hidden">../assets/audios/presentation/eliel.mp3</div>
+                            <div class="card-github hidden">https://github.com/Elielltn</div>
+                            <div class="card-linkedin hidden">https://www.linkedin.com/in/eliel-lucas-trajano-neto-a1410a281/</div>
                         </div>
                     </div>
                     <div class="card none" id="cards" style="background-image: url('../assets/cards/wallpapers/marcus.jpg');">
@@ -152,6 +163,9 @@
                                 É o tipo de pessoa que pode transformar uma conversa casual em uma memória inesquecível 
                                 com apenas uma observação ou uma piada bem colocada.
                             </div>
+                            <div class="card-song hidden">../assets/audios/presentation/marcus.mp3</div>
+                            <div class="card-github hidden">https://google.com</div>
+                            <div class="card-linkedin hidden">https://google.com</div>
                         </div>
                     </div>
                     <div class="next-card toggle-card" id="next-button">
@@ -164,23 +178,43 @@
                         <div class="presentation-image">
                             <img src="../assets/logos/css.png" alt="" id="presentation-img" style="width: 100%; height: 150%;">
                         </div>
-                        <div class="presentation-text" id="presentation-txt">
-                            <div class="presentation-title" style="font-size: 60px; font-weight: 600;">
-                                <h1></h1>
-                            </div>
-                            <div class="presentation-description" style="margin-top: 1em; font-size: 20px;">
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="presentation-song">
-                            <div class="song-card">
-                                <audio src="../assets/audios/presentation/brenno.mp3" id="audio"></audio>
-                                <div class="spotify-logo">
-                                    <img src="../assets/logos/spotify.png" style="width: 100%; height: 100%;">
+                        <div class="presentation-data">
+                            <div class="presentation-text" id="presentation-txt">
+                                <div class="presentation-title" style="font-size: 60px; font-weight: 600;">
+                                    <h1></h1>
                                 </div>
-                                <button class="start-song" id="playpause-btn">▶</button>
-                                <input type="range" id="seek-bar" value="0" max="100">
-                                <span style="margin-left: 3px;" id="current-time">00:00</span> / <span id="duration">00:00</span>
+                                <div class="presentation-description" style="margin-top: 1em; font-size: 20px;">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="presentation-cards">
+                                <div class="presentation-song">
+                                    <div class="song-card">
+                                        <audio src="../assets/audios/presentation/brenno.mp3" id="audio"></audio>
+                                        <div class="spotify-logo">
+                                            <img src="../assets/logos/spotify.png" style="width: 100%; height: 100%;">
+                                        </div>
+                                        <button class="start-song" id="playpause-btn">▶</button>
+                                        <input type="range" id="seek-bar" value="0" max="100">
+                                        <span style="margin-left: 3px;" id="current-time">00:00</span> / <span id="duration">00:00</span>
+                                    </div>
+                                </div>
+                                <a class="presentation-github">
+                                    <div class="github-logo">
+                                        <img src="../assets/logos/github.png" style="width: 100%; height: 100%; filter: invert();">
+                                    </div>
+                                    <div class="github-text">
+                                        <p>Github</p>
+                                    </div>
+                                </a>
+                                <a class="presentation-linkedin" href="https://youtube.com">
+                                    <div class="linkedin-logo">
+                                        <img src="../assets/logos/linkedin.png" style="width: 100%; height: 100%;">
+                                    </div>
+                                    <div class="linkedin-text">
+                                        <p>LinkedIn</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>

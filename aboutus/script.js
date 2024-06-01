@@ -7,6 +7,9 @@ page = {
         presentationImage: document.getElementById('presentation-img'),
         presentationDescription: document.getElementById('presentation-txt'),
 
+        presentationGithub: document.querySelector('.presentation-github'),
+        presentationLinkedin: document.querySelector('.presentation-linkedin'),
+
         song: {
             audio: document.getElementById("audio"),
             playPauseBtn: document.getElementById("playpause-btn"),
@@ -14,30 +17,58 @@ page = {
             currentTime: document.getElementById("current-time"),
             duration: document.getElementById("duration")
 
+        },
+
+        link:{
+            songLink: document.querySelectorAll('.card-song'),
+            githubLink: document.querySelectorAll('.card-github'),
+            linkedinLink: document.querySelectorAll('.card-linkedin')
+
         }
     }
 }
 
+
 toggleCards = Array.from(page.elements.cards)
 positions = ['left', 'main', 'right', 'none', 'none']
 
-
 window.onload = () =>{
-    changePresentation(page.elements.presentationImage, page.elements.presentationDescription.childNodes[1], page.elements.presentationDescription.childNodes[3])
+    changePresentation(
+        page.elements.presentationImage, 
+        page.elements.presentationDescription.childNodes[1], 
+        page.elements.presentationDescription.childNodes[3],
+        page.elements.song.audio,
+        page.elements.presentationGithub,
+        page.elements.presentationLinkedin
+    )
 
 }
 
 page.elements.previousCard.addEventListener('click', () =>{
     toPreviousCard(toggleCards, positions);
     mainCardAnimation(toggleCards, 2);
-    changePresentation(page.elements.presentationImage, page.elements.presentationDescription.childNodes[1], page.elements.presentationDescription.childNodes[3])
+    changePresentation(
+        page.elements.presentationImage, 
+        page.elements.presentationDescription.childNodes[1], 
+        page.elements.presentationDescription.childNodes[3],
+        page.elements.song.audio,
+        page.elements.presentationGithub,
+        page.elements.presentationLinkedin
+    )
     
 })
 
 page.elements.nextCard.addEventListener('click', () =>{
     mainCardAnimation(toggleCards, 0);
     toNextCard(toggleCards, positions);
-    changePresentation(page.elements.presentationImage, page.elements.presentationDescription.childNodes[1], page.elements.presentationDescription.childNodes[3])
+    changePresentation(
+        page.elements.presentationImage, 
+        page.elements.presentationDescription.childNodes[1], 
+        page.elements.presentationDescription.childNodes[3],
+        page.elements.song.audio,
+        page.elements.presentationGithub,
+        page.elements.presentationLinkedin
+    )
 
 })
 
@@ -118,11 +149,16 @@ function toNextCard(cardsArray, cardsPosition){
 
 //Da pra melhorar essas funções, facilitando todas em 1 só
 
-function changePresentation(img, title, description){
+
+function changePresentation(img, title, description, audio, github, linkedin){
     img.src = document.querySelectorAll('.main')[0].childNodes[1].childNodes[1].src
 
     title.innerHTML = document.querySelectorAll('.main')[0].childNodes[3].childNodes[1].textContent
     description.innerHTML = document.querySelectorAll('.main')[0].childNodes[3].childNodes[11].textContent
+
+    audio.src = document.querySelectorAll('.main')[0].childNodes[3].childNodes[13].textContent
+    github.href = document.querySelectorAll('.main')[0].childNodes[3].childNodes[15].textContent
+    linkedin.href = document.querySelectorAll('.main')[0].childNodes[3].childNodes[17].textContent
 
 }
 

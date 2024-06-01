@@ -222,6 +222,10 @@ input[type='range']{
 
 }
 
+.presentation-data{
+    position: relative;
+}
+
 .presentation-text{
     margin: 0 1em 1em 5em;
     width: 45em;
@@ -229,8 +233,14 @@ input[type='range']{
 
 }
 
+.presentation-cards{
+    position: relative;
+    margin: 2em 0 0 5em;
+
+    font-size: 18px;
+}
+
 .presentation-song{
-    position: absolute;
     display: flex;
     align-items: center;
     padding: .8em;
@@ -238,8 +248,8 @@ input[type='range']{
     width: fit-content;
     height: 50px;
 
-    bottom: 0;
-    left: 25em;
+    top: 0;
+    left: 0;
     border-radius: 5em;
     
 }
@@ -267,6 +277,41 @@ input[type='range']{
     font-size: 20px;
     cursor: pointer;
 
+}
+
+.presentation-github{
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    padding: .6em .8em .6em .8em;
+    margin: 3em 1em 0 0;
+
+    border-radius: 3em;
+    background-color: #313131;
+    text-decoration: none;
+}
+
+.github-logo{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+}
+
+.presentation-linkedin{
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    padding: .6em .8em .6em .8em;
+
+    border-radius: 3em;
+    background-color: #313131;
+    text-decoration: none;
+}
+
+.linkedin-logo{
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
 }
 
 .footer-text-content {

@@ -158,16 +158,19 @@ body{
 }
 
 .miner-content{
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
 
-    margin: 4em 0 4em 0;
+    margin: 3em 0 0 0;
+    background: linear-gradient(to bottom, #131313, purple);
 }
 
 .miner-page{
     width: 20em;
     height: 25em;
+    margin: 13em 0 4em 0;
 
     background-color: lightgray;
     border: outset rgb(184, 184, 184) 5px;
