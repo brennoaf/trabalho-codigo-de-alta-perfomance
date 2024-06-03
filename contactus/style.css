@@ -87,6 +87,24 @@ form{
     margin-top: 1em;
 }
 
+.whatsapp-content{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+.whatsapp-button{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    width: fit-content;
+    
+
+    border: none;
+    border-radius: 15px;
+    background-color: #76aa81;
+}
 
 .form-content{
     display: flex;
@@ -148,6 +166,10 @@ form{
     right: 2em;
 }
 
+.text-area{
+    position: relative;
+}
+
 .text-area-text{
     margin: 3em 0 1em 0;
 }
@@ -169,10 +191,8 @@ form{
 }
 
 .send-button{
-    position: absolute;
-    bottom: 1em;
-    right: -10em;
     padding: 1em 1.5em 1em 1.5em;
+    margin-bottom: 3em;
 
     color: black;
     border: none;
