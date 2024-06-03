@@ -21,6 +21,7 @@ page = {
         shadow: document.getElementById('shadow'),
         switchHitbox: document.querySelector('.switch-hitbox'),
         switchContent: document.querySelector('.switch-content'),
+        galleryContent: document.querySelector('.gallery-content'),
 
         footer: document.querySelector('footer'),
 
@@ -169,13 +170,14 @@ page.elements.shadow.addEventListener('mouseover', () => {
 })
 
 page.elements.switchHitbox.addEventListener('click', () =>{
-    page.elements.pageContent.style.display = 'initial'
-    document.body.style.overflow = 'initial'
-    page.elements.shadow.style.display = 'none'
-    page.elements.switchContent.style.display = 'none'
-    page.elements.light.style.display = 'none'
-    document.body.style.cursor = 'initial'
-    page.elements.footer.style.display = 'initial'
+    page.elements.pageContent.style.display = 'initial';
+    document.body.style.overflow = 'initial';
+    page.elements.shadow.style.display = 'none';
+    page.elements.switchContent.style.display = 'none';
+    page.elements.light.style.display = 'none';
+    page.elements.galleryContent.style.display = 'none';
+    document.body.style.cursor = 'initial';
+    page.elements.footer.style.display = 'initial';
 
 })
 
